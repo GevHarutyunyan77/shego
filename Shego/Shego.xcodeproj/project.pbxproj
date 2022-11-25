@@ -1,0 +1,584 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E481A124292F462000EA49CC /* ShegoApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481A123292F462000EA49CC /* ShegoApp.swift */; };
+		E481A126292F462000EA49CC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481A125292F462000EA49CC /* ContentView.swift */; };
+		E481A128292F462100EA49CC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E481A127292F462100EA49CC /* Assets.xcassets */; };
+		E481A12B292F462100EA49CC /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E481A12A292F462100EA49CC /* Preview Assets.xcassets */; };
+		E481A135292F462100EA49CC /* ShegoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481A134292F462100EA49CC /* ShegoTests.swift */; };
+		E481A13F292F462100EA49CC /* ShegoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481A13E292F462100EA49CC /* ShegoUITests.swift */; };
+		E481A141292F462100EA49CC /* ShegoUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E481A140292F462100EA49CC /* ShegoUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E481A131292F462100EA49CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E481A118292F462000EA49CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E481A11F292F462000EA49CC;
+			remoteInfo = Shego;
+		};
+		E481A13B292F462100EA49CC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E481A118292F462000EA49CC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E481A11F292F462000EA49CC;
+			remoteInfo = Shego;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E481A120292F462000EA49CC /* Shego.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shego.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E481A123292F462000EA49CC /* ShegoApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShegoApp.swift; sourceTree = "<group>"; };
+		E481A125292F462000EA49CC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		E481A127292F462100EA49CC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E481A12A292F462100EA49CC /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		E481A130292F462100EA49CC /* ShegoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShegoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E481A134292F462100EA49CC /* ShegoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShegoTests.swift; sourceTree = "<group>"; };
+		E481A13A292F462100EA49CC /* ShegoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShegoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E481A13E292F462100EA49CC /* ShegoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShegoUITests.swift; sourceTree = "<group>"; };
+		E481A140292F462100EA49CC /* ShegoUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShegoUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E481A11D292F462000EA49CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E481A12D292F462100EA49CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E481A137292F462100EA49CC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E481A117292F462000EA49CC = {
+			isa = PBXGroup;
+			children = (
+				E481A122292F462000EA49CC /* Shego */,
+				E481A133292F462100EA49CC /* ShegoTests */,
+				E481A13D292F462100EA49CC /* ShegoUITests */,
+				E481A121292F462000EA49CC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E481A121292F462000EA49CC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E481A120292F462000EA49CC /* Shego.app */,
+				E481A130292F462100EA49CC /* ShegoTests.xctest */,
+				E481A13A292F462100EA49CC /* ShegoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E481A122292F462000EA49CC /* Shego */ = {
+			isa = PBXGroup;
+			children = (
+				E481A123292F462000EA49CC /* ShegoApp.swift */,
+				E481A125292F462000EA49CC /* ContentView.swift */,
+				E481A127292F462100EA49CC /* Assets.xcassets */,
+				E481A129292F462100EA49CC /* Preview Content */,
+			);
+			path = Shego;
+			sourceTree = "<group>";
+		};
+		E481A129292F462100EA49CC /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				E481A12A292F462100EA49CC /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E481A133292F462100EA49CC /* ShegoTests */ = {
+			isa = PBXGroup;
+			children = (
+				E481A134292F462100EA49CC /* ShegoTests.swift */,
+			);
+			path = ShegoTests;
+			sourceTree = "<group>";
+		};
+		E481A13D292F462100EA49CC /* ShegoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E481A13E292F462100EA49CC /* ShegoUITests.swift */,
+				E481A140292F462100EA49CC /* ShegoUITestsLaunchTests.swift */,
+			);
+			path = ShegoUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E481A11F292F462000EA49CC /* Shego */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E481A144292F462100EA49CC /* Build configuration list for PBXNativeTarget "Shego" */;
+			buildPhases = (
+				E481A11C292F462000EA49CC /* Sources */,
+				E481A11D292F462000EA49CC /* Frameworks */,
+				E481A11E292F462000EA49CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Shego;
+			productName = Shego;
+			productReference = E481A120292F462000EA49CC /* Shego.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E481A12F292F462100EA49CC /* ShegoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E481A147292F462100EA49CC /* Build configuration list for PBXNativeTarget "ShegoTests" */;
+			buildPhases = (
+				E481A12C292F462100EA49CC /* Sources */,
+				E481A12D292F462100EA49CC /* Frameworks */,
+				E481A12E292F462100EA49CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E481A132292F462100EA49CC /* PBXTargetDependency */,
+			);
+			name = ShegoTests;
+			productName = ShegoTests;
+			productReference = E481A130292F462100EA49CC /* ShegoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E481A139292F462100EA49CC /* ShegoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E481A14A292F462100EA49CC /* Build configuration list for PBXNativeTarget "ShegoUITests" */;
+			buildPhases = (
+				E481A136292F462100EA49CC /* Sources */,
+				E481A137292F462100EA49CC /* Frameworks */,
+				E481A138292F462100EA49CC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E481A13C292F462100EA49CC /* PBXTargetDependency */,
+			);
+			name = ShegoUITests;
+			productName = ShegoUITests;
+			productReference = E481A13A292F462100EA49CC /* ShegoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E481A118292F462000EA49CC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1400;
+				LastUpgradeCheck = 1400;
+				TargetAttributes = {
+					E481A11F292F462000EA49CC = {
+						CreatedOnToolsVersion = 14.0.1;
+					};
+					E481A12F292F462100EA49CC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = E481A11F292F462000EA49CC;
+					};
+					E481A139292F462100EA49CC = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = E481A11F292F462000EA49CC;
+					};
+				};
+			};
+			buildConfigurationList = E481A11B292F462000EA49CC /* Build configuration list for PBXProject "Shego" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E481A117292F462000EA49CC;
+			productRefGroup = E481A121292F462000EA49CC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E481A11F292F462000EA49CC /* Shego */,
+				E481A12F292F462100EA49CC /* ShegoTests */,
+				E481A139292F462100EA49CC /* ShegoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E481A11E292F462000EA49CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E481A12B292F462100EA49CC /* Preview Assets.xcassets in Resources */,
+				E481A128292F462100EA49CC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E481A12E292F462100EA49CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E481A138292F462100EA49CC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E481A11C292F462000EA49CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E481A126292F462000EA49CC /* ContentView.swift in Sources */,
+				E481A124292F462000EA49CC /* ShegoApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E481A12C292F462100EA49CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E481A135292F462100EA49CC /* ShegoTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E481A136292F462100EA49CC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E481A13F292F462100EA49CC /* ShegoUITests.swift in Sources */,
+				E481A141292F462100EA49CC /* ShegoUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E481A132292F462100EA49CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E481A11F292F462000EA49CC /* Shego */;
+			targetProxy = E481A131292F462100EA49CC /* PBXContainerItemProxy */;
+		};
+		E481A13C292F462100EA49CC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E481A11F292F462000EA49CC /* Shego */;
+			targetProxy = E481A13B292F462100EA49CC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		E481A142292F462100EA49CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E481A143292F462100EA49CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E481A145292F462100EA49CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shego/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.Shego;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E481A146292F462100EA49CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Shego/Preview Content\"";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.Shego;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E481A148292F462100EA49CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.ShegoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shego.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shego";
+			};
+			name = Debug;
+		};
+		E481A149292F462100EA49CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.ShegoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Shego.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Shego";
+			};
+			name = Release;
+		};
+		E481A14B292F462100EA49CC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.ShegoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shego;
+			};
+			name = Debug;
+		};
+		E481A14C292F462100EA49CC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = s.ShegoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Shego;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E481A11B292F462000EA49CC /* Build configuration list for PBXProject "Shego" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E481A142292F462100EA49CC /* Debug */,
+				E481A143292F462100EA49CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E481A144292F462100EA49CC /* Build configuration list for PBXNativeTarget "Shego" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E481A145292F462100EA49CC /* Debug */,
+				E481A146292F462100EA49CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E481A147292F462100EA49CC /* Build configuration list for PBXNativeTarget "ShegoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E481A148292F462100EA49CC /* Debug */,
+				E481A149292F462100EA49CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E481A14A292F462100EA49CC /* Build configuration list for PBXNativeTarget "ShegoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E481A14B292F462100EA49CC /* Debug */,
+				E481A14C292F462100EA49CC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E481A118292F462000EA49CC /* Project object */;
+}
