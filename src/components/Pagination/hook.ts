@@ -9,7 +9,6 @@ function useContainer() {
     const [disable, setDisable] = useState('first')
     const {currentPage, totalPages} = useSelector((state: any) => state.pagination)
 
-
     const renderArray = (count: number) => {
         let arr = []
         for (let i: number = 1; i <= count; i++) {
@@ -20,28 +19,28 @@ function useContainer() {
 
     const data = renderArray(totalPages)
 
-    const handleActiveNum = (num: number) => {
-        dispatch(setCurrentPage(num))
-    }
-
-    const handleIndexMin = () => {
-        if (index !== 0) {
-            setIndex(index - 1)
-            dispatch(setCurrentPage(data[index - 1][0]))
+    const handlePages = (page:number | null, type?:string)=>{
+        if(page){
+            dispatch(setCurrentPage(page))
         }
-        if (index == 1) {
-            setDisable('first')
+        if(type === 'minus'){
+            if (index !== 0) {
+                setIndex(index - 1)
+                dispatch(setCurrentPage(data[index - 1][0]))
+            }
+            if (index == 1) {
+                setDisable('first')
+            }
         }
-    }
-
-    const handleIndexPlus = () => {
-        if (index !== data.length - 1) {
-            setIndex(index + 1);
-            dispatch(setCurrentPage(data[index + 1][0]))
-            setDisable('')
-        }
-        if (index === data.length - 2) {
-            setDisable('last')
+        if (type === 'plus'){
+            if (index !== data.length - 1) {
+                setIndex(index + 1);
+                dispatch(setCurrentPage(data[index + 1][0]))
+                setDisable('')
+            }
+            if (index === data.length - 2) {
+                setDisable('last')
+            }
         }
     }
 
@@ -49,12 +48,39 @@ function useContainer() {
         index,
         currentPage,
         data,
-        handleActiveNum,
-        handleIndexMin,
-        handleIndexPlus,
+        handlePages,
+        // handleActiveNum,
+        // handleIndexMin,
+        // handleIndexPlus,
         disable
     }
 
 }
 
 export default useContainer;
+
+
+// const handleActiveNum = (num: number) => {
+//     dispatch(setCurrentPage(num))
+// }
+//
+// const handleIndexMin = () => {
+//     if (index !== 0) {
+//         setIndex(index - 1)
+//         dispatch(setCurrentPage(data[index - 1][0]))
+//     }
+//     if (index == 1) {
+//         setDisable('first')
+//     }
+// }
+//
+// const handleIndexPlus = () => {
+//     if (index !== data.length - 1) {
+//         setIndex(index + 1);
+//         dispatch(setCurrentPage(data[index + 1][0]))
+//         setDisable('')
+//     }
+//     if (index === data.length - 2) {
+//         setDisable('last')
+//     }
+// }

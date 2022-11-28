@@ -8,7 +8,7 @@ const initialState: InitData = {
   topDriversData: [],
 };
 
-export default function (state = initialState, action: any) {
+export default function (state = initialState, action:any) {
   switch (action.type) {
     case GET_DATA_REQUEST: {
       return {

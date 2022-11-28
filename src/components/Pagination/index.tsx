@@ -12,22 +12,23 @@ function Pagination() {
         currentPage,
         data,
         disable,
-        handleActiveNum,
-        handleIndexMin,
-        handleIndexPlus
+        // handleActiveNum,
+        // handleIndexMin,
+        // handleIndexPlus,
+      handlePages
     } = useContainer()
 
 
     return (
         <View style={st.container}>
-            <Pressable style={st.arrowView} onPress={handleIndexMin}>
+            <Pressable style={st.arrowView} onPress={()=>handlePages(null, 'minus')}>
                 <LeftArrow disable={disable}/>
             </Pressable>
 
             {!_.isEmpty(data[index]) && data[index].map((item: any) => {
                 return (
                     <Pressable key={_.uniqueId()} style={currentPage === item ? st.activeNum : st.numView}
-                               onPress={() => handleActiveNum(item)}>
+                               onPress={() => handlePages(item)}>
                         <Text style={currentPage === item ? st.activeText : st.text}>{item}</Text>
                     </Pressable>
                 )
@@ -35,7 +36,7 @@ function Pagination() {
 
 
             <Pressable style={st.arrowView}
-                       onPress={handleIndexPlus}>
+                       onPress={()=>handlePages(null,'plus')}>
                 <RightArrow disable={disable}/>
             </Pressable>
         </View>

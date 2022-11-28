@@ -20,7 +20,11 @@ function Navigation() {
             </View>
             <NavigationContainer>
                 <Tab.Navigator screenOptions={SCREEN_OPTIONS}>
-                    <Tab.Screen name={'driversList'} component={DriversList}/>
+                    <Tab.Screen
+                      name={'driversList'}
+                      component={DriversList}
+                      options={{tabBarIcon: () => <Text style={{color: 'black', fontSize: 30}}>All</Text>}}
+                    />
                     <Tab.Screen
                         name={'homeScreen'}
                         component={HomeScreen}
