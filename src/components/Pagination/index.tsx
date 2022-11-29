@@ -18,6 +18,8 @@ function Pagination() {
       handlePages
     } = useContainer()
 
+  console.log('index', index);
+
 
     return (
         <View style={st.container}>

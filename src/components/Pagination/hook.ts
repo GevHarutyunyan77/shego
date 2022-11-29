@@ -1,13 +1,13 @@
 import React, {useState} from 'react';
 import _ from "lodash";
 import {useDispatch, useSelector} from "react-redux";
-import {setCurrentPage} from "../../store/actions/pagination";
+import { setCurrentPage, setIndex } from "../../store/actions/pagination";
 
 function useContainer() {
     const dispatch = useDispatch()
-    const [index, setIndex] = useState(0)
     const [disable, setDisable] = useState('first')
-    const {currentPage, totalPages} = useSelector((state: any) => state.pagination)
+    const {currentPage, totalPages, index} = useSelector((state: any) => state.pagination)
+    console.log(7777,index);
 
     const renderArray = (count: number) => {
         let arr = []
@@ -25,7 +25,8 @@ function useContainer() {
         }
         if(type === 'minus'){
             if (index !== 0) {
-                setIndex(index - 1)
+                dispatch(setIndex(index-1))
+                // setIndex(index - 1)
                 dispatch(setCurrentPage(data[index - 1][0]))
             }
             if (index == 1) {
@@ -34,7 +35,8 @@ function useContainer() {
         }
         if (type === 'plus'){
             if (index !== data.length - 1) {
-                setIndex(index + 1);
+                dispatch(setIndex(index+1))
+                // setIndex(index + 1);
                 dispatch(setCurrentPage(data[index + 1][0]))
                 setDisable('')
             }

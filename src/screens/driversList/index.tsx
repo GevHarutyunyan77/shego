@@ -1,27 +1,24 @@
 import React from "react";
-import { SafeAreaView } from "react-native";
+import { FlatList, SafeAreaView } from "react-native";
 import Pagination from "../../components/Pagination";
-import { Styles } from "./style";
+import st from "./style";
 import DriversAll from "../../components/DriversAll";
-
-
-
-
-const style = Styles()
+import {isEmpty, uniqueId} from "lodash";
+import useContainer from "./hook";
 
 function DriversList() {
-
-
+ const {allDriversList, renderItem} = useContainer()
   return (
-   <SafeAreaView style={style.container}>
-
+   <SafeAreaView style={st.container}>
        <Pagination/>
-     <DriversAll country='Portugal' name='Max Verstappen'/>
-     <DriversAll country='Brazil' name='Marcos Alonso'/>
-     <DriversAll country='Germany' name='Micael Schumaher'/>
-     <DriversAll country='Austria' name='Micael Schumaher'/>
-
-
+     {
+       !isEmpty(allDriversList) &&
+       <FlatList
+         data={allDriversList}
+         renderItem={renderItem}
+         keyExtractor={() => uniqueId()}
+       />
+     }
    </SafeAreaView>
   );
 }

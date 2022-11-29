@@ -1,12 +1,12 @@
-import {GET_DATA_REQUEST, GET_TOP_DRIVERS_SUCCESS} from '../../actions/app';
-import {SET_PAGE} from "../../actions/pagination";
+import { GET_ALL_DRIVERS_SUCCESS, GET_DATA_REQUEST, GET_TOP_DRIVERS_SUCCESS } from "../../actions/app";
+import { SET_INDEX, SET_PAGE } from "../../actions/pagination";
 
 
 
 const initialState = {
     currentPage: 1,
-    totalPages: 855,
-    paginationOffset:0
+    totalPages: 10,
+    index:0
 };
 
 export default function (state = initialState, action: any) {
@@ -18,15 +18,28 @@ export default function (state = initialState, action: any) {
             };
         }
 
+        case GET_ALL_DRIVERS_SUCCESS: {
+            return {
+                ...state,
+                totalPages:action.payload.totalPages
+            };
+        }
+
         case SET_PAGE: {
             return {
                 ...state,
                 currentPage:action.payload
             };
         }
+        case SET_INDEX: {
+            return {
+                ...state,
+                index:action.payload
+            };
+        }
 
         default: {
-            return {...state};
+            return state ;
         }
     }
 }

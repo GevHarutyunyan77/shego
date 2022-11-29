@@ -1,4 +1,4 @@
-import {GET_DATA_REQUEST, GET_TOP_DRIVERS_SUCCESS} from '../../actions/app';
+import {GET_DATA_REQUEST, GET_TOP_DRIVERS_SUCCESS, GET_ALL_DRIVERS_SUCCESS} from '../../actions/app';
 import {InitData} from "./types";
 
 
@@ -6,6 +6,7 @@ import {InitData} from "./types";
 const initialState: InitData = {
   status: 'no',
   topDriversData: [],
+  allDriversList:[]
 };
 
 export default function (state = initialState, action:any) {
@@ -25,8 +26,15 @@ export default function (state = initialState, action:any) {
       };
     }
 
+    case GET_ALL_DRIVERS_SUCCESS: {
+      return {
+        ...state,
+        allDriversList: action.payload.data
+      };
+    }
+
     default: {
-      return {...state};
+      return state;
     }
   }
 }

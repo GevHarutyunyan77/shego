@@ -1,6 +1,7 @@
 export interface InitData{
     topDriversData:TopDrivers[]
     status:'no' | 'ok' | 'error' | 'request'
+    allDriversList:any,
 }
 
 export interface TopDrivers {
