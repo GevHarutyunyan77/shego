@@ -1,35 +1,39 @@
-import {useDispatch, useSelector} from "react-redux";
-import React, {useEffect} from "react";
+import { useDispatch, useSelector } from "react-redux";
+import React, { useEffect } from "react";
 
-import {getTopDrivers} from "../../store/actions/app";
-import Driver from '../../components/Driver';
+import { getTopDrivers } from "../../store/actions/app";
+import Driver from "../../components/Driver";
 
 function useContainer() {
-    const dispatch = useDispatch();
-    const {topDriversData} = useSelector((state: any) => state.app);
+  const dispatch = useDispatch();
+  const { topDriversData } = useSelector((state: any) => state.app);
 
-    useEffect(() => {
-        dispatch(getTopDrivers());
-    }, []);
+  useEffect(() => {
+    dispatch(getTopDrivers());
+  }, []);
 
-    const renderItem = ({item}: any) => {
-        const {position, points} = item
-        const {givenName, familyName, nationality} = item.Driver
-        return (
-            <Driver
-                name={`${givenName} ${familyName}`}
-                position={position}
-                country={nationality}
-                team={item.Constructors[0].name}
-                points={points}
-            />
-        )
-    };
+  const renderItem = ({ item }: any) => {
+    const { position, points } = item;
+    const { givenName, familyName, nationality, url, driverId, dateOfBirth } = item.Driver;
+    return (
+      <Driver
+        dateOfBirth={dateOfBirth}
+        driverId={driverId}
+        url={url}
+        name={givenName}
+        surname={familyName}
+        position={position}
+        country={nationality}
+        team={item.Constructors[0].name}
+        points={points}
+      />
+    );
+  };
 
-    return {
-        renderItem,
-        topDriversData
-    }
+  return {
+    renderItem,
+    topDriversData,
+  };
 }
 
-export default useContainer
+export default useContainer;

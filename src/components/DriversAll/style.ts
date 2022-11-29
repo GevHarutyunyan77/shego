@@ -3,9 +3,11 @@ import { Sizes } from "../../constants/ratio";
 
 export default StyleSheet.create({
   container: {
+
     width: "100%",
     height: Sizes(30),
     flexDirection: "row",
+justifyContent:'space-between',
     alignItems:'center',
     marginTop:Sizes(7),
     borderWidth:0,
@@ -18,6 +20,13 @@ export default StyleSheet.create({
     shadowRadius: 7.49,
     elevation: 12,
   },
+  leftView:{
+    flexDirection: "row",
+    height:'100%',
+    alignItems:'center',
+
+  },
+
   flagStyle: {
     width: Sizes(30),
     height: "80%",
@@ -28,6 +37,18 @@ export default StyleSheet.create({
   text:{
     color:'black',
     fontSize:Sizes(20)
+  },
+  icon:{
+    height:"100%",
+    width:Sizes(50),
+  },
+
+  raceButton:{
+    height:'100%',
+    paddingLeft:Sizes(20),
+    paddingRight:Sizes(20)
+
+
   }
 
 });

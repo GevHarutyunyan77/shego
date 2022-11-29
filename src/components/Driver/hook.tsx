@@ -6,15 +6,12 @@ function useContainer() {
 
 
   const handleNavigation = (driver:object)=>{
-    navigation.navigate('driverInfo', driver)
+     navigation.navigate('driverInfo', driver)
   }
 
 
-
-
   return {
-    handleNavigation,
-
+    handleNavigation
   }
 }
 

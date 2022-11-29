@@ -9,12 +9,15 @@ import DriverInfo from "./src/screens/DriverInfo";
 
 const Stack = createNativeStackNavigator()
 
+
+
 function App() {
     return (
         <Provider store={store}>
             <PersistGate loading={null} persistor={persistor}>
               <NavigationContainer>
                 <Stack.Navigator screenOptions={{headerShown:false}}>
+
                   <Stack.Screen name={'tabNavigation'} component={TabNavigation}/>
                   <Stack.Screen name={'driverInfo'} component={DriverInfo}/>
                 </Stack.Navigator>
